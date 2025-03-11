@@ -1,12 +1,12 @@
 import pandas as pd
 import re
 
-input_file = "backlinks_data.xlsx" 
-output_file = "clean_result4.xlsx"
+input_file = "backlinks.xlsx" 
+output_file = "clean_results_mar.xlsx"
 
 df = pd.read_excel(input_file, engine="openpyxl")
 
-urls = df.iloc[:, 0]  
+urls = df.iloc[:, 2]  
 
 profile_regex = r'calendly\.com/[A-Za-z0-9]+'
 time_slot_regex = r'calendly\.com/([A-Za-z0-9]+)/\d+min'
