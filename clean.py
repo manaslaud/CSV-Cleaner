@@ -1,12 +1,12 @@
 import pandas as pd
 import re
 
-input_file = "set 2.xlsx" 
-output_file = "set2_clean.xlsx"
+input_file = "set 3.xlsx" 
+output_file = "set3_clean.xlsx"
 
 df = pd.read_excel(input_file, engine="openpyxl")
 
-urls = df.iloc[:, 0]  
+urls = df.iloc[:, 2]  
 
 profile_regex = r'calendly\.com/[A-Za-z0-9]+'
 time_slot_regex = r'calendly\.com/([A-Za-z0-9]+)/\d+min'
