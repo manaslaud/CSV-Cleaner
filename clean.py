@@ -1,8 +1,8 @@
 import pandas as pd
 import re
 
-input_file = "set 5.xlsx" 
-output_file = "set5_clean.xlsx"
+input_file = "Set 6.xlsx" 
+output_file = "set6_clean.xlsx"
 
 df = pd.read_excel(input_file, engine="openpyxl")
 
